@@ -1,0 +1,22 @@
+{
+  "name": "CrAAS",
+  "version": "0.1.0",
+  "description": "Crawling As A Service",
+  "main": "lambda.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JScott/CrAAS.git"
+  },
+  "author": "JScott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JScott/CrAAS/issues"
+  },
+  "homepage": "https://github.com/JScott/CrAAS",
+  "dependencies": {
+    "simplecrawler": "^0.3.10"
+  }
+}
