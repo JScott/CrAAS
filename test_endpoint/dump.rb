@@ -5,7 +5,7 @@ require 'json'
 require 'uri'
 
 set :bind, '0.0.0.0'
-set :port, 80
+set :port, 8080
 
 get '/' do
   "Hello World!"
