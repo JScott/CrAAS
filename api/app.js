@@ -1,5 +1,6 @@
 var express = require('express')
 var app = express()
+var colors = require('colors')
 var bodyParser = require('body-parser')
 app.use(bodyParser.json())
 // app.use(bodyParser.urlencoded({extended: true}))
@@ -20,13 +21,13 @@ app.post('/crawl', function (req, res) {
     FunctionName: 'CrAAS',
     InvokeArgs: JSON.stringify(req.body)
   }
-  console.log("Calling Lambda", req.body)
+  console.log("Lambda called".cyan, req.body)
   lambda.invokeAsync(params, function(err, data) {
     if (err) {
       console.log(err, err.stack)
     }
     else {
-      console.log("Lambda returned", data)
+      console.log("Lambda returned".green, data)
       res.send(data)
     }
   })
